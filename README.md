@@ -1,3 +1,3 @@
 # quizzical
 A quiz game in React using external API of questions.
-[Hosted on Netlify.](https://harmonious-sherbet-27f67f.netlify.app/)
+[Hosted on Netlify.](https://vermillion-scone-c20d1b.netlify.app/)
