@@ -1,0 +1,49 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "category": "Geography",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What is the name of the peninsula containing Spain and Portugal?",
+      "correct_answer": "Iberian Peninsula",
+      "incorrect_answers": [
+        "European Peninsula",
+        "Peloponnesian Peninsula",
+        "Scandinavian Peninsula"
+      ]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "medium",
+      "question": "When was the game &quot;Roblox&quot; released?",
+      "correct_answer": "2006",
+      "incorrect_answers": ["2003", "2002", "2007"]
+    },
+    {
+      "category": "History",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In 1939, Britain and France declared war on Germany after it invaded which country?",
+      "correct_answer": "Poland",
+      "incorrect_answers": ["Czechoslovakia", "Austria", "Hungary"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "What was the release date of &quot;Grand Theft Auto IV&quot;?",
+      "correct_answer": "April 29, 2008",
+      "incorrect_answers": ["May 21, 2009", "June 22, 2010", "July 28, 2008"]
+    },
+    {
+      "category": "Entertainment: Video Games",
+      "type": "multiple",
+      "difficulty": "easy",
+      "question": "In the Halo series, which era of SPARTAN is Master Chief? ",
+      "correct_answer": "SPARTAN-II",
+      "incorrect_answers": ["SPARTAN-I", "SPARTAN-III", "SPARTAN-IV"]
+    }
+  ]
+}
