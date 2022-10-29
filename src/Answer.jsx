@@ -1,14 +1,6 @@
 import React from "react";
 import { decode } from "html-entities";
 
-function atobSafe(str) {
-  try {
-    return window.atob(str);
-  } catch (e) {
-    return "";
-  }
-}
-
 export default function Answer(props) {
   let classes = "Answer";
   props.isChosen && (classes = classes + " answer--chosen");

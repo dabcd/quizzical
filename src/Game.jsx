@@ -17,10 +17,6 @@ export default function Game() {
   const [isCheckResults, setIsCheckResults] = React.useState(false);
   const [intPlayAgain, setIntPlayAgain] = React.useState(0);
 
-  function checkAnswers() {
-    setIsCheckResults(true);
-  }
-
   function addScore() {
     setScores((prev) => prev + 1);
   }
@@ -34,13 +30,12 @@ export default function Game() {
   }
 
   React.useEffect(() => {
-    async function fetchData() {
+    (async function () {
       const res = await fetch(apiUrl);
       const fetchedData = await res.json();
       setData(fetchedData);
       initKeys();
-    }
-    fetchData();
+    })();
   }, [intPlayAgain]);
 
   function playAgain() {
@@ -59,7 +54,7 @@ export default function Game() {
           correct_answer={correct_answer}
           incorrect_answers={incorrect_answers}
           isCheckResults={isCheckResults}
-          addScore={addScore}
+          addScore={() => setScores((prev) => prev + 1)}
           intPlayAgain={intPlayAgain}
         />
       )
@@ -79,7 +74,7 @@ export default function Game() {
           </button>
         </div>
       ) : (
-        <button className="game--button" onClick={checkAnswers}>
+        <button className="game--button" onClick={() => setIsCheckResults(true)}>
           Check answers
         </button>
       )}
